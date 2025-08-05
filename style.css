@@ -1,0 +1,86 @@
+/* --- Add these styles to your existing style.css file --- */
+
+/* Loader Spinner Style */
+.loader {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid var(--primary-color); /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin: 4rem auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Explanation Box Style */
+.explanation-box {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #e9f4ff;
+    border-left: 5px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    text-align: left;
+    animation: fadeIn 0.5s ease;
+}
+.explanation-box h4 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color-dark);
+}
+
+/* Review Area Styles */
+#review-area {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.review-question {
+    background: var(--white-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    border-left: 5px solid;
+}
+
+.review-question.correct-answer {
+    border-left-color: var(--success-color);
+}
+.review-question.incorrect-answer {
+    border-left-color: var(--danger-color);
+}
+
+.review-question h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.review-question p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.review-question .user-answer.correct {
+    color: var(--success-color);
+    font-weight: 600;
+}
+.review-question .user-answer.incorrect {
+    color: var(--danger-color);
+    font-weight: 600;
+    text-decoration: line-through;
+}
+.review-question .correct-answer-text {
+    color: var(--success-color);
+    font-weight: 600;
+}
+.review-explanation {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    font-size: 0.95rem;
+    color: #555;
+}
